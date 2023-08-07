@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: red;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  /* Highlighted background for the title */
+  padding: 10px 20px;
+  margin-right: 40px; /* Increase the space between the title and course button */
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #ffc0cb; /* Highlighted background for the navigation section */
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Push the nav section to the right */
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  background-color: #c70000;
+}
+
+.hero {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+.schedule-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.university-partners,
+.finance-partners {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.university-partners h2,
+.finance-partners h2 {
+  color: red;
+  font-size: 36px; /* Set the font size to match the title font size */
+}
+
+.dark-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add this CSS style to align the logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* If needed, add additional styles to the logo image */
+.logo img {
+  max-width: 100%;
+  margin-left: 20px;
+  height: 50px;
+}
+/* ... Your existing CSS styles ... */
+
+.hero {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Styling for the "Schedule a Call" button and labels */
+.schedule-btn {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.labels {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.labels p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Your existing CSS styles */
+
+.university-partners {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.partner {
+  text-align: center;
+}
+
+.partner img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.partner p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.partner img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.finance {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.finance-partners h2 {
+  color: red; /* Apply red color to the Finance Partners heading if needed */
+}
+
+.finance .partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.finance .partner {
+  text-align: center;
+}
+
+.finance .partner img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.finance .partner p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.finance .partner img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dark-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
